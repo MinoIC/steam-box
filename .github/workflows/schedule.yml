@@ -9,7 +9,7 @@ on:
       - master
   schedule:
     - cron: "0 * * * *"
-    
+  workflow_dispatch:
 
 jobs:
 
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 8bf56353bcb3a8e798b55b546b9619cf
+          GIST_ID: 8ee733f5ae7a6f20a955ad56c946e084
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
     steps:
